@@ -1,9 +1,9 @@
 const fill = document.querySelector('.fill');
 const fillfive = document.querySelector('.fillfive');
 const empties = document.querySelectorAll('.empty');
-const counter = document.querySelector('.counter')
+const counter = document.querySelector('.counter p')
 const vendingMachine = document.querySelector('.vending-machine')
-
+let score = Number(counter.textContent)
 
 fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
@@ -55,7 +55,10 @@ function dragLeave(){
 
 function dragDrop(){
     console.log(this)
-    this.append(fill)
+    // this.append(fill)
+    score += 1
+    counter.textContent = score.toString()
+    
 }
 
 // function dragDropFive(){
