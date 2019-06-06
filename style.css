@@ -3,10 +3,20 @@ body {
 }
 
 .fill{
-    background-image: url('http://source.unsplash.com/random/150x150');
+    background-image: url('dollar.png');
     position: relative;
     height: 150px;
     width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.fillfive{
+    background-image: url('5cent.png');
+    position: relative;
+    height: 150px;
+    width: 146px;
     top: 5px;
     left: 5px;
     cursor: pointer;
@@ -21,8 +31,16 @@ body {
     background-color: white;
 }
 
+.vending-machine{
+    height: 640px;
+    width: 320px;
+    margin: 10px;
+    border: 3px rgb(91, 1, 1) solid;
+    background-color: white;
+}
+
 .hold{
-    border: solid salmon 4px;
+    background-color: rgba(210, 105, 30, 0);
 }
 
 .hover{
